@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+  <rect width="100%" height="100%" fill="#e5e0f5" />
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+    font-family="Poppins, Arial, sans-serif" font-size="40" fill="#3d2c7a">
+    BACKPACK
+  </text>
+</svg>

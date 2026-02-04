@@ -1,0 +1,10 @@
+**/node_modules/
+**/dist/
+**/build/
+**/target/
+**/.venv/
+**/__pycache__/
+**/*.log
+.idea/
+.vscode/
+.DS_Store
