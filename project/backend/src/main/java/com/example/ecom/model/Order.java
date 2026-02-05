@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.util.*;
 
 @Entity
+@Table(name = "orders")
 public class Order {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -11,6 +12,11 @@ public class Order {
     private Long userId;
 
     @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+        name = "order_items",
+        joinColumns = @JoinColumn(name = "order_id"),
+        inverseJoinColumns = @JoinColumn(name = "order_item_id")
+    )
     private List<OrderItem> items = new ArrayList<>();
 
     private double total;
