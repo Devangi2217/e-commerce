@@ -19,6 +19,10 @@ A full-stack e-commerce demo that showcases product browsing, cart management, a
 - Backend runs on `http://localhost:8080`
 - Frontend calls REST APIs at `http://localhost:8080/api`
 
+**Production (Render)**
+- Frontend: `https://e-commerce-xf1i.onrender.com`
+- Backend API: `https://e-commerce-1-olbu.onrender.com/api`
+
 **Project Structure**
 - `project/frontend` React app
 - `project/backend` Spring Boot API
@@ -55,6 +59,12 @@ npm run dev
 **Notes**
 - Payments are demo-only. No real transactions are processed.
 - CORS is configured for `http://localhost:5173` in the backend controllers.
+
+**Recent Update (February 5, 2026)**
+- Deployed frontend and backend on Render.
+- Backend now includes Docker build and uses the Render `PORT`.
+- Frontend API base URL points to the Render backend.
+- Image paths updated to work in production deployments.
 
 **Future Improvements**
 - Authentication and user profiles
