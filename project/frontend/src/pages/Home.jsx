@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API = "http://localhost:8080/api";
+const API = "https://e-commerce-1-olbu.onrender.com/api";
 
 const IMAGE_MAP = {
   1: "/images/White-T-shirt.jpg",

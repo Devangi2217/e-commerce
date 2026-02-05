@@ -7,7 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = { "http://localhost:5173", "http://dm_shoppingmart.com:5173" })
+@CrossOrigin(origins = { "http://localhost:5173", "http://dm_shoppingmart.com:5173", "https://e-commerce-xf1i.onrender.com" })
 public class ProductController {
     private final ProductRepo repo;
 
