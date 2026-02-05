@@ -3,17 +3,19 @@ import { Link } from "react-router-dom";
 
 const API = "https://e-commerce-1-olbu.onrender.com/api";
 
+const IMAGE_BASE = import.meta.env.BASE_URL || "/";
+
 const IMAGE_MAP = {
-  1: "/images/White-T-shirt.jpg",
-  2: "/images/flat-minimalist-tshirt.avif",
-  3: "/images/FreeVe-tshirt.jpg",
-  4: "/images/sneaker.webp",
-  5: "/images/high-sneaker.avif",
-  6: "/images/jordan-sneaker.jpg",
-  7: "/images/bagpack.avif",
-  8: "/images/black-school-bag.jpeg",
-  9: "/images/round-glass.jpg",
-  10: "/images/sun_glass.jpeg",
+  1: `${IMAGE_BASE}images/White-T-shirt.jpg`,
+  2: `${IMAGE_BASE}images/flat-minimalist-tshirt.avif`,
+  3: `${IMAGE_BASE}images/FreeVe-tshirt.jpg`,
+  4: `${IMAGE_BASE}images/sneaker.webp`,
+  5: `${IMAGE_BASE}images/high-sneaker.avif`,
+  6: `${IMAGE_BASE}images/jordan-sneaker.jpg`,
+  7: `${IMAGE_BASE}images/bagpack.avif`,
+  8: `${IMAGE_BASE}images/black-school-bag.jpeg`,
+  9: `${IMAGE_BASE}images/round-glass.jpg`,
+  10: `${IMAGE_BASE}images/sun_glass.jpeg`,
 };
 
 const CATEGORY_MAP = {
@@ -118,7 +120,7 @@ export default function Home() {
   }, [cartItems]);
 
   function productImage(product) {
-    return IMAGE_MAP[product.id] || "/images/placeholder.svg";
+    return IMAGE_MAP[product.id] || `${IMAGE_BASE}images/placeholder.svg`;
   }
 
   function handleFormChange(e) {
